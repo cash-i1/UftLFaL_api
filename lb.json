@@ -2,9 +2,16 @@
     "users": {
         "john": {
             "scores": [
-                {"unix": "20348209320", "value": "12092", "colour": "3AB7FH"},
-                {"unix": "2034829320", "value": "16092", "colour": "1AB7FH"}
-
+                {
+                    "unix": "20348209320",
+                    "value": "12092",
+                    "colour": "3AB7FH"
+                },
+                {
+                    "unix": "2034829320",
+                    "value": "1",
+                    "colour": "1AB7FH"
+                }
             ]
         },
         "speedrunsaid": {
@@ -14,9 +21,41 @@
                 "discord": "@speedrunsaid"
             },
             "scores": [
-                {"unix": "20348209320", "value": "12", "colour": "3AB7FH"},
-                {"unix": "2034829320", "value": "16092", "colour": "1AB7FH"}
-
+                {
+                    "unix": "20348209320",
+                    "value": "12",
+                    "colour": "3AB7FH"
+                },
+                {
+                    "unix": "20348209320",
+                    "value": "12",
+                    "colour": "3AB7FH"
+                }
+            ]
+        },
+        "CashGamingOND": {
+            "likes": 0,
+            "socials": {
+                "discord": "sdf",
+                "youtube": "@Cashigrtro"
+            },
+            "scores": [],
+            "score": [
+                {
+                    "unix": 1709440287.4873688,
+                    "value": "10330",
+                    "colour": "flame"
+                },
+                {
+                    "unix": 1709440756.8788736,
+                    "value": "10330",
+                    "colour": "flame"
+                },
+                {
+                    "unix": 1709440981.6301713,
+                    "value": "10330",
+                    "colour": "flame"
+                }
             ]
         }
     }
