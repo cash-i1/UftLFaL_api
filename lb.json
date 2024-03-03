@@ -1,11 +1,11 @@
 {
     "users": {
         "john": {
-            "scores": {
+            "scores": [
                 {"unix": "20348209320", "value": "12092", "colour": "3AB7FH"},
                 {"unix": "2034829320", "value": "16092", "colour": "1AB7FH"}
 
-            }
+            ]
         },
         "speedrunsaid": {
             "likes": 0,
@@ -13,11 +13,11 @@
                 "youtube": "https://youtube.com/@sedspeedruns",
                 "discord": "@speedrunsaid"
             },
-            "scores": {
+            "scores": [
                 {"unix": "20348209320", "value": "12", "colour": "3AB7FH"},
                 {"unix": "2034829320", "value": "16092", "colour": "1AB7FH"}
 
-            }
+            ]
         }
     }
 }

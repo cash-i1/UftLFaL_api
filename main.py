@@ -1,27 +1,29 @@
 from flask import Flask, jsonify, request
+import json
 
 app = Flask(__name__)
+lb_path = "./lb.json"
 
-@app.route("/get-user/<user_id>")
-def get_user(user_id):
-    user_data = {
-        "user_id": user_id,
-        "name": "JOHM",
-        "email": "asdfsdf@sdf.com"
-    }
+def lb_json():
+    with open(lb_path, "r") as file:
+        # data = file.read()
+        data = json.load(file)
+        return data
 
-    extra = request.args.get("extra")
-    if extra:
-        user_data["extra"] = extra
+@app.route("/get/scores/user/<username>")
+def get_user_scores(username):
+    pass
 
-    return jsonify(user_data), 200
+@app.route("/get/top/<int:amount>")
+def get_top_scores(amount):
+    scores = {}
+    for i in range(amount):
+         
 
-@app.route("/create-user", methods=["POST"])
-def create_user():
-    if request.method == "POST":
-        data = request.get_json()
-
-        return 201
+@app.route("/get/lb")
+def get_lb():
+    return lb_json()
 
 if __name__ == "__main__":
     app.run(debug=True)
+
